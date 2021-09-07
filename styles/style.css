@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("resback.jpg");
+    background-size: cover;
+    margin: 0px !important;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding:10px 30px;
+}
+.nav > h2{
+    font-family:'Yesteryear', cursive;
+    font-size: 31px;
+}
+.nav-list{
+    margin:5px 10px;
+    display: flex;
+    list-style: none;
+    font-family: 'Oswald';
+    font-weight: 600px;
+}
+
+.list-item{
+    margin: 2px 9px;
+    padding: 3px;
+}
+.list-item >a{
+    line-height: 20px;
+}
+.list-item a:hover{
+    color: rgb(235, 63, 41);
+}
+.header > h2{
+    font-family: 'Rochester';
+    font-size: 32px;
+    margin-top: 28vh;
+    margin-bottom: 10px;
+}
+.btn{
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(255, 80, 80);
+}
+.btn:hover{
+    background-color: rgb(255, 55, 55);
+    box-shadow: 3px 3px 10px -4px rgb(14, 13, 13);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.bag{
+    font-size: 26px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.bag:hover{
+    color: rgb(235, 63, 41);
+    cursor: pointer;
+}
+.first-section{
+    background-color: rgb(238, 238, 238);
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.food-item{
+    width: 20vw;
+    margin: 20px;
+    margin-top: 100px;
+    height: 70vh;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 0px 10px -4px black;
+    background-color: white;
+}
+.food-item > img{
+    width: 20vw;
+    height: 70vh;
+    border-radius: 10px;
+} 
+.food-item > img:hover{
+    cursor: pointer;
+}
+.mid{
+    margin-top:40px ;
+}
+.vision{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-top: 100px;
+}
+.vision >h2{
+    font-family: 'Rochester';
+    color: rgb(255, 191, 14);
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.about-btn{
+    margin-top: 40px;
+    margin-bottom:0px;
+    border: 2px solid red;
+    padding:5px 10px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.about-btn:hover {
+    background-color: rgb(255, 95, 95) ;
+    color: white;
+}
+.about-btn > a{
+    color: black;
+}
+.about-btn:hover a{
+    color: white;
+}
+.food-item:hover{
+    box-shadow: -3px 3px 20px rgba(0, 0, 0,0.6);
+    transform: scale(1.1);
+}
+.second-section{
+    position: relative;
+    padding: 120px;
+    padding-bottom: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('service_back.jpg');
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.second-section::before{
+    position:absolute;
+    content: " ";
+    display:block;
+    left:-110%;
+    top: 0;
+    right: 0;
+    width:100%;
+    border-style: solid;
+    border-width: 80px 110vw 0 0;
+    border-color: rgb(238, 238, 238) transparent red red;
+}
+.second-section::after{
+    position:absolute;
+    content: " ";
+    display:block;
+    left:-110%;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    border-style: solid;
+    border-width: 80px 110vw 0 0;
+    border-color: transparent rgb(238, 238, 238) red red;
+}
+.second-section>h2{
+    font-family: 'Rochester';
+    color: rgb(255, 189, 67);
+    margin-bottom: 20px;
+}
+.services{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    display: flex;
+}
+.service-item{
+    width: 22vw;
+    margin: 20px;
+    height: 35vh;
+    padding-bottom: 30px;
+}
+.service-img1{
+    background-image: url('breakfast.jpg');
+    
+}
+.service-img2{
+    background-image: url('lunch.jpg');
+   
+}
+.service-img3{
+    background-image: url('dinner.jpg');
+    
+}
+.service-img1,
+.service-img2,
+.service-img3{
+    background-size: cover;
+    width: 22vw;
+    border-radius:5px;
+    height: 35vh;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.overlay{
+    opacity: 0;
+    padding: 12px;
+    background-color: rgba(255, 165, 29, 0.7);
+    width: 22vw;
+    transition: all .2s ease-in-out;
+    border-radius:5px;
+    height: 35vh;
+}
+.overlay > div{
+    border: 2px solid white;
+    height: 32vh;
+    width: 20vw;
+    padding-top: 30%;
+}
+.service-item:hover .overlay{
+    opacity: 1;
+}
+.service-item h3{
+    margin-bottom: 20px;
+}
+.special-menu{
+    padding: 20px 200px;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    text-align: center;
+    height: max-content;
+}
+.today{
+    font-family: 'Rochester';
+    color: rgb(255, 189, 67);
+    margin: bottom 10px;
+}
+.special-cols{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+}
+.special-col{
+    width: 50%;
+    
+}
+.large{
+    display: flex;
+    height:70vh;
+    color: white;
+}
+.small{
+    display: flex;
+    color:rgb(255, 189, 67) ;
+    height: 35vh;
+}
+.col1{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align:-webkit-center;
+}
+.col1 > .type{
+    font-family: 'Rochester';
+    margin-bottom: 15px;
+}
+.col1 div{
+    width: 30%;
+    align-self: center;
+    background-color: white;
+    height: 2px;
+}
+.small .col1 div{
+    background-color: rgb(255, 189, 67);
+}
+.col1 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.col1 h4{
+    margin-top: 30px;
+}
+.col2{
+    width: 50%;
+}
+.large .col1{
+    background-color: rgb(255, 189, 65);
+}
+.small .col1{
+    background-color: white;
+}
+.small h3{
+    color: black;
+}
+.fa-ice-cream,
+.fa-utensils{
+    font-size: 36px;
+    margin-top: 50px;
+}
+.col1 p{
+    font-size: 12px;
+}
+.fl{
+    background-image: url('icecream.jpg');
+    background-size: cover;
+}
+.s1{
+    background-image: url('sushi.jpg');
+    background-size: cover;
+}
+.s2{
+    background-image: url('chicken.jpg');
+    background-size: cover;
+}
+.s3{
+    background-image: url('chicken.jpg');
+    background-size: cover;
+}
+.s4{
+    background-image: url('sushi2.jpg');
+    background-size: cover;
+}
+.sl{
+    background-image: url('doner.jpg');
+    background-size: cover;
+}
+.sicon{
+    font-size: 22px !important;
+    margin-top: 20px;
+}
+.discover-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('discover.jpg');
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 250px;
+    color: white;
+}
+.discover-lists{
+    padding-top: 80px;
+    width: 100%;
+}
+.discover-lists ul{
+    width: 50%;
+    list-style: none;
+}
+.discover-item>div{
+    display: flex;
+}
+.dotted-line{
+    border-bottom: dashed;
+    width: 40%;
+    padding: 0px 3px;
+    margin: 3px;
+    
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    background-color: rgb(49, 49, 49);
+}
+.footer-nav{
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-list{
+    display:flex;
+    list-style: none;
+}
+.f-item{
+    margin: 10px;
+}
+.f-item i{
+    color: rgb(168, 168, 168);
+    font-size: 34px;
+}
+.f-item i:hover{
+    color: white;
+    cursor: pointer;
+}
